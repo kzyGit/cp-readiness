@@ -31,6 +31,22 @@
 			#footer-right{text-align: center}
 		}
 	</style>
+	
+	<script type="text/javascript">
+
+	function validateSearchForm() {
+		var searchItem = document.forms["searchform"]["searchItem"].value;
+		if (searchItem == "") {
+			document.getElementById("noinputalert").innerHTML = "Type in a search item.";
+			return false;
+		}
+
+		else{
+			alert(searchItem);
+		}
+	}
+
+	</script>
 
 </head>
 <body>
@@ -64,7 +80,7 @@
 				
 				<img src="google.png"/><br /><br />
 				<form name="searchform"  onsubmit="return validateSearchForm()" method="post">
-					<div id="searchbox"><span><input type="text" name="search"  id="searchbox1"/></span>
+					<div id="searchbox"><span><input type="text" name="searchItem"  id="searchbox1"/></span>
 						<span id="mic"><a href="#" title="Search by Voice"><img src="microphone.png" style="padding-top:7px;"></a> </span></div><br />
 						<div id="noinputalert"></div>
 
