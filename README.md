@@ -1,0 +1,1 @@
+I am Kezzy Ang'iro, a very passionate and simple lady, with a strong desire and goal to be a highly skilled software developer and technologist.
