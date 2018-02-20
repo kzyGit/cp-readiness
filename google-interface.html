@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google</title>
+	<link rel="shortcut icon" type="text/css" href="googleg_lodp.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+	body{font-size: 13px}
+		a{text-decoration: none; color:black; padding: 8px}
+		a:hover{text-decoration: underline; }	
+		#a1{color: blue}	
+		#navbar{height:20%;}
+		#container{width: 100%; height:100%;}
+		#navbar_right_end{float:right;}
+		#footer1, #footer2{float:bottom; width:100%; padding:12px; border-top:1px solid #ddd; background-color: #eee;}
+		#searchSection { text-align: center; padding-top: 3%; padding-bottom: 6%}
+		#country, #lowerfooter{background-color: #ddd; padding:0 !important; width:100%}
+		#searchbox{width:50%; margin: auto; height: 47px; border:1px solid #ddd; box-shadow: 1px 1px 2px #ddd;}
+		#searchbox1{width:90%; float:left; height: 45px; border:0; padding:10px}
+		#submit{border:0; background-color: #eee; padding:10px; border-radius: 2px; margin:6px}
+		#lucky{ background-color: #eee; padding:12px; border-radius: 2px; margin:6px}
+		#footer-right{text-align: right}
+		#noinputalert{color:red;}
+
+		@media (max-width: 500px) {
+			#navbar, #mic, #lucky{display: none;}
+			#footer1, #footer2{text-align: center; float:center}
+			#footer-right{text-align: center}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="container" id="container" >
+
+		<div class="row" >
+<br />
+			<div class="col-md-12" id="navbar"> 
+
+				<span>			
+					<a href="https://www.google.com/intl/en/about/?fg=1&utm_source=google.com&utm_medium=referral&utm_campaign=hp-header">About</a>
+
+					<a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a>
+				</span>
+
+				<span id="navbar_right_end">
+					<a href="https://mail.google.com/mail/">Gmail</a>
+
+					<a href="https://www.google.co.ke/imghp?hl=en&tab=wi">Images</a>
+
+					<a href="https://www.google.co.ke/intl/en/about/products/">Apps</a>
+
+					<a href=""><button type="button" class="btn btn-primary">Sign In</button></a>
+
+				</span>
+
+			</div>
+
+			<div class="col-md-12" id="searchSection"> 
+				
+				<img src="google.png"/><br /><br />
+				<form name="searchform"  onsubmit="return validateSearchForm()" method="post">
+					<div id="searchbox"><span><input type="text" name="search"  id="searchbox1"/></span>
+						<span id="mic"><a href="#" title="Search by Voice"><img src="microphone.png" style="padding-top:7px;"></a> </span></div><br />
+						<div id="noinputalert"></div>
+
+					<input type="submit" name="submit" id="submit" value="Google Search"/>
+					
+					<span id="lucky"><a href="#" style="text-decoration:none">I'm Feeling Lucky</a></span>
+				</form>
+				<br /> 
+
+				Google Offered in: <a href="" id="a1" >Kiswahili</a>
+			</div>
+
+			<div class="col-md-12" id="footer1" style=" padding-left:35px">Kenya
+				
+			</div>
+
+			<div class="col-md-12" id="footer2" >
+					<div class="col-md-4">
+			
+							<a href="https://www.google.com/intl/en_ke/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+	
+							<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+							<br />
+					</div>
+					<div class="col-md-8" id="footer-right">
+							<a href="https://www.google.com/intl/en_ke/policies/privacy/?fg=1">Privacy</a>
+	
+							<a href="https://www.google.com/intl/en_ke/policies/terms/regional.html">Terms</a>
+	
+							<a href="https://www.google.com/preferences?hl=en">Settings</a>
+	
+					</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
