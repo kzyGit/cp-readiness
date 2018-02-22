@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import TaskList from './Components/TasksList';
+
 class App extends Component {
 
     constructor(props){
@@ -51,7 +53,7 @@ class App extends Component {
         <h4 className="listTitle">My Tasks List</h4>
 
         <div className="Taskslist"> 
-        <ol>{this.state.ItemsList.map((val) => <li>{val}</li>)}</ol>
+        <TaskList ItemsList={this.state.ItemsList}/>
       </div>
 
       </div>
